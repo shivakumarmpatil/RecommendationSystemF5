@@ -12,7 +12,7 @@ lst_City = []
 lst_Region = []
 lst_Zip = []
 lst_Pets = []
-for index in range(60):
+for index in range(100):
     try:
         page = requests.get('https://www.realtor.com/apartments/New-York_NY/pg-'+str(index))
         soup = BeautifulSoup(page.text, 'html.parser')
